@@ -27,7 +27,11 @@ const Index = () => {
       {/* NAV */}
       <header className="fixed top-0 inset-x-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="container mx-auto flex items-center justify-between py-3">
-          <img src={logo} alt="Parrilla del Sabor" className="h-12 md:h-14 rounded-md bg-white p-1" />
+          <a href="#" className="flex items-center gap-3 group">
+            <div className="bg-white rounded-xl p-1.5 ring-2 ring-primary shadow-fire group-hover:scale-105 transition-transform">
+              <img src={logo} alt="Parrilla del Sabor" className="h-12 md:h-16 w-auto" />
+            </div>
+          </a>
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-wider">
             <a href="#nuevos" className="hover:text-primary transition">Nuevos</a>
             <a href="#pedidos" className="hover:text-primary transition">Más pedidos</a>
@@ -248,7 +252,9 @@ const Index = () => {
       {/* FOOTER */}
       <footer className="border-t border-border py-10">
         <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <img src={logo} alt="Parrilla del Sabor" className="h-12 rounded-md bg-white p-1" />
+          <div className="bg-white rounded-xl p-2 ring-2 ring-primary shadow-fire">
+            <img src={logo} alt="Parrilla del Sabor" className="h-14 w-auto" />
+          </div>
           <p className="text-sm text-muted-foreground text-center">
             © {new Date().getFullYear()} Parrilla del Sabor · Todo al carbón · Barranquilla
           </p>

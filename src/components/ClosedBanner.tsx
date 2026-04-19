@@ -35,7 +35,9 @@ export const ClosedBanner = () => {
         <X className="w-6 h-6" />
       </button>
       <div className="max-w-2xl w-full text-center space-y-8">
-        <img src={logo} alt="Parrilla del Sabor" className="mx-auto w-48 md:w-64 rounded-xl bg-white p-4" />
+        <div className="mx-auto inline-block bg-white rounded-2xl p-5 ring-4 ring-primary shadow-fire">
+          <img src={logo} alt="Parrilla del Sabor" className="w-48 md:w-64 h-auto" />
+        </div>
         <h2 className="font-display text-4xl md:text-6xl text-primary leading-tight">
           ¡Lo sentimos!
         </h2>
