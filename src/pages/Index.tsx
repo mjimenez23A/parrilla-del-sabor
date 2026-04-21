@@ -54,7 +54,7 @@ const Index = () => {
       </header>
 
       {/* HERO */}
-      <section className="relative min-h-screen flex justify-center overflow-hidden  pt-20">
+      <section className="relative min-h-screen flex justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-top"
           style={{ backgroundImage: `url(${heroBg})` }}
@@ -62,7 +62,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
         <div className="relative container mx-auto text-center px-6 pt-16 pb-10">
   {/* LOGO */}
-  <div className="flex justify-center mb-1">
+  <div className="flex justify-center">
     <img
       src={logoNuevo}
       alt="Parrilla del Sabor · Todo al carbón"
