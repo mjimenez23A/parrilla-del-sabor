@@ -54,20 +54,19 @@ const Index = () => {
       </header>
 
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      <section className="relative min-h-screen flex justify-center overflow-hidden  pt-20">
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-top"
           style={{ backgroundImage: `url(${heroBg})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
-        <div className="relative container mx-auto text-center px-6 py-10">
-
+        <div className="relative container mx-auto text-center px-6 pt-16 pb-10">
   {/* LOGO */}
-  <div className="flex justify-center mb-6">
+  <div className="flex justify-center mb-1">
     <img
       src={logoNuevo}
       alt="Parrilla del Sabor · Todo al carbón"
-      className="w-[240px] h-[240px]"
+      className=""
     />
   </div>
 
@@ -89,7 +88,7 @@ const Index = () => {
       </section>
 
       {/* NUEVOS PLATOS */}
-      <section id="nuevos" className="py-10 bg-ember">
+      <section id="nuevos" className="py-20 bg-ember">
         <div className="container mx-auto px-6">
           <div className="text-center mb-14">
             <span className="text-primary font-bold uppercase tracking-[0.3em] text-sm">Recién salidos del carbón</span>
