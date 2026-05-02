@@ -1,5 +1,6 @@
 import { Flame, MapPin, Phone, Clock, Instagram, ExternalLink, MessageCircle } from "lucide-react";
 import logoNuevo from "@/assets/logo1.png";
+import TypeLine from "@/components/typeLine";
 const logoLight = logoNuevo;
 import menuImg from "@/assets/menu.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
@@ -61,30 +62,30 @@ const Index = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
         <div className="relative container mx-auto text-center px-6 pt-16 pb-10">
-  {/* LOGO */}
-  <div className="flex justify-center mt-[10%]">
-    <img
-      src={logoNuevo}
-      alt="Parrilla del Sabor · Todo al carbón"
-      className="!max-w-[80%]"
-    />
-  </div>
+          {/* LOGO */}
+          <div className="flex justify-center mt-[10%]">
+            <img
+              src={logoNuevo}
+              alt="Parrilla del Sabor · Todo al carbón"
+              className="!max-w-[80%]"
+            />
+          </div>
 
-  <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary/40 text-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-6">
-    <Flame className="w-4 h-4" /> Todo al carbón · Barranquilla
-  </div>
+          <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary/40 text-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-6">
+            <Flame className="w-4 h-4" /> Todo al carbón · Barranquilla
+          </div>
 
-  <h1 className="font-display text-6xl md:text-9xl leading-none mb-6">
-    EL PERRO MÁS <span className="text-gradient-fire">GRANDE</span>
-    <br />
-    EN QUILLA
-  </h1>
+          <h1 className="font-display text-6xl md:text-9xl leading-none mb-6">
+            EL PERRO MÁS <span className="text-gradient-fire">GRANDE</span>
+            <br />
+            EN QUILLA
+          </h1>
 
-  <p className="text-sm md:text-base text-muted-foreground max-w-xl mx-auto mb-4">
-    Sabor ahumado, porciones épicas. Hechos con fuego, carbón y mucho corazón costeño.
-  </p>
+          <p className="text-sm md:text-base text-muted-foreground max-w-xl mx-auto mb-4">
+            Sabor ahumado, porciones épicas. Hechos con fuego, carbón y mucho corazón costeño.
+          </p>
 
-</div>
+        </div>
       </section>
 
       {/* NUEVOS PLATOS */}
@@ -143,7 +144,7 @@ const Index = () => {
               >
                 <div className="flex items-center justify-between">
                   <h3 className="font-display text-2xl mb-2 group-hover:text-primary transition">{p.name}</h3>
-                  <Flame className="w-6 h-6 text-primary mb-4 mt-2 ml-4"/>
+                  <Flame className="w-6 h-6 text-primary mb-4 mt-2 ml-4" />
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">{p.desc}</p>
                 <div className="font-display text-2xl text-primary">{p.price}</div>
@@ -157,19 +158,49 @@ const Index = () => {
       <section id="menu" className="py-10 bg-ember">
         <div className="container mx-auto px-6 text-center">
           <span className="text-primary font-bold uppercase tracking-[0.3em] text-sm">La carta completa</span>
-          <h2 className="font-display mt-3 mb-8 leading-none">
-            <span className="block text-4xl md:text-5xl">
-              ¿YA SABES
-            </span>
+          <div className="relative overflow-hidden py-10">
 
-            <span className="block text-7xl md:text-9xl font-black text-primary">
-              QUE
-            </span>
+            {/* Glow rojo */}
+            <div className="absolute inset-0 bg-red-500/10 blur-3xl animate-pulse" />
 
-            <span className="block text-6xl md:text-8xl tracking-tight">
-              PEDIR?
-            </span>
-          </h2>
+            {/* Partículas */}
+            <div className="absolute inset-0 pointer-events-none">
+              <div className="absolute bottom-0 left-1/4 w-2 h-2 bg-orange-500 rounded-full animate-bounce" />
+              <div className="absolute bottom-10 right-1/3 w-1 h-1 bg-yellow-400 rounded-full animate-ping" />
+              <div className="absolute top-10 left-1/2 w-2 h-2 bg-red-500 rounded-full animate-pulse" />
+            </div>
+
+            <div className="relative z-10">
+              <TypeLine
+                text="¿YA SABES"
+                speed={90}
+                className="block text-4xl md:text-5xl font-display"
+              />
+
+              <div
+                className="
+        block
+        text-7xl
+        md:text-9xl
+        font-black
+        text-primary
+        animate-pulse
+        drop-shadow-[0_0_30px_red]
+      "
+                style={{
+                  animation: "popIn 1s ease forwards",
+                }}
+              >
+                QUE
+              </div>
+
+              <TypeLine
+                text="PEDIR?"
+                speed={120}
+                className="block text-6xl md:text-8xl tracking-tight font-display"
+              />
+            </div>
+          </div>
           <a
             href={menuImg}
             target="_blank"
