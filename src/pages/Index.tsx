@@ -168,45 +168,60 @@ const Index = () => {
             </div>
             <div className="relative z-10 flex flex-col items-center">
 
-            <div className="h-[40px] md:h-[55px] flex items-end justify-center">              <TypeLine
-                text="¿YA SABES"
-                speed={90}
-                delay={4000}
-                className="text-4xl md:text-5xl font-display leading-none"
-              />
-            </div>
+              {/* Glow rojo general */}
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="w-[320px] h-[320px] md:w-[500px] md:h-[500px] bg-red-500/10 blur-3xl rounded-full" />
+              </div>
 
-            <div
-              className="
-                h-[90px]
-                md:h-[120px]
-                flex
-                items-center
-                justify-center
-                text-7xl
-                md:text-9xl
-                font-black
-                text-primary
-                animate-pulse
-                drop-shadow-[0_0_30px_red]
-              "
-              style={{
-                animation: "popIn 1s ease forwards",
-              }}
-            >
-              QUE
-            </div>
+              {/* Contenido */}
+              <div className="relative z-10 flex flex-col items-center">
 
-            <div className="h-[55px] md:h-[75px] flex items-start justify-center">              <TypeLine
-                text="PEDIR?"
-                speed={120}
-                delay={4000}
-                startDelay={1800}
-                className="text-6xl md:text-8xl tracking-tight font-display leading-none"
-              />
-            </div>
+                {/* YA SABES */}
+                <div className="h-[40px] md:h-[55px] flex items-end justify-center">
+                  <TypeLine
+                    text="¿YA SABES"
+                    speed={90}
+                    delay={4000}
+                    className="text-4xl md:text-5xl font-display leading-none"
+                  />
+                </div>
 
-          </div>
+                {/* QUE */}
+                <div
+                  className="
+                    h-[90px]
+                    md:h-[120px]
+                    flex
+                    items-center
+                    justify-center
+                    text-7xl
+                    md:text-9xl
+                    font-black
+                    text-primary
+                    animate-pulse
+                    drop-shadow-[0_0_30px_red]
+                    leading-none
+                  "
+                  style={{
+                    animation: "popIn 1s ease forwards",
+                  }}
+                >
+                  QUE
+                </div>
+
+                {/* PEDIR */}
+                <div className="h-[55px] md:h-[75px] flex items-start justify-center">
+                  <TypeLine
+                    text="PEDIR?"
+                    speed={120}
+                    delay={4000}
+                    startDelay={1800}
+                    className="text-6xl md:text-8xl tracking-tight font-display leading-none"
+                  />
+                </div>
+
+              </div>
+            </div>
             
           </div>
           <a
