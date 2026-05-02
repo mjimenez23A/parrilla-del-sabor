@@ -168,19 +168,18 @@ const Index = () => {
             </div>
             <div className="relative z-10 flex flex-col items-center">
 
-            <div className="h-[60px] md:h-[80px] flex items-center justify-center">
-              <TypeLine
+            <div className="h-[40px] md:h-[55px] flex items-end justify-center">              <TypeLine
                 text="¿YA SABES"
                 speed={90}
                 delay={4000}
-                className="text-4xl md:text-5xl font-display"
+                className="text-4xl md:text-5xl font-display leading-none"
               />
             </div>
 
             <div
               className="
-                h-[120px]
-                md:h-[170px]
+                h-[90px]
+                md:h-[120px]
                 flex
                 items-center
                 justify-center
@@ -198,13 +197,12 @@ const Index = () => {
               QUE
             </div>
 
-            <div className="h-[90px] md:h-[120px] flex items-center justify-center">
-              <TypeLine
+            <div className="h-[55px] md:h-[75px] flex items-start justify-center">              <TypeLine
                 text="PEDIR?"
                 speed={120}
                 delay={4000}
                 startDelay={1800}
-                className="text-6xl md:text-8xl tracking-tight font-display"
+                className="text-6xl md:text-8xl tracking-tight font-display leading-none"
               />
             </div>
 
