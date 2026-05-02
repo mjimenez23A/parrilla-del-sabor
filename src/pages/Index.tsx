@@ -174,6 +174,7 @@ const Index = () => {
               <TypeLine
                 text="¿YA SABES"
                 speed={90}
+                delay={4000}
                 className="block text-4xl md:text-5xl font-display"
               />
 
@@ -197,6 +198,8 @@ const Index = () => {
               <TypeLine
                 text="PEDIR?"
                 speed={120}
+                delay={4000}
+                startDelay={1800}
                 className="block text-6xl md:text-8xl tracking-tight font-display"
               />
             </div>
