@@ -160,49 +160,56 @@ const Index = () => {
           <span className="text-primary font-bold uppercase tracking-[0.3em] text-sm">La carta completa</span>
           <div className="relative overflow-hidden py-10">
 
-            {/* Glow rojo */}
-            <div className="absolute inset-0 bg-red-500/10 blur-3xl animate-pulse" />
-
             {/* Partículas */}
             <div className="absolute inset-0 pointer-events-none">
               <div className="absolute bottom-0 left-1/4 w-2 h-2 bg-orange-500 rounded-full animate-bounce" />
               <div className="absolute bottom-10 right-1/3 w-1 h-1 bg-yellow-400 rounded-full animate-ping" />
               <div className="absolute top-10 left-1/2 w-2 h-2 bg-red-500 rounded-full animate-pulse" />
             </div>
+            <div className="relative z-10 flex flex-col items-center">
 
-            <div className="relative z-10">
+            <div className="h-[60px] md:h-[80px] flex items-center justify-center">
               <TypeLine
                 text="¿YA SABES"
                 speed={90}
                 delay={4000}
-                className="block text-4xl md:text-5xl font-display"
+                className="text-4xl md:text-5xl font-display"
               />
+            </div>
 
-              <div
-                className="
-        block
-        text-7xl
-        md:text-9xl
-        font-black
-        text-primary
-        animate-pulse
-        drop-shadow-[0_0_30px_red]
-      "
-                style={{
-                  animation: "popIn 1s ease forwards",
-                }}
-              >
-                QUE
-              </div>
+            <div
+              className="
+                h-[120px]
+                md:h-[170px]
+                flex
+                items-center
+                justify-center
+                text-7xl
+                md:text-9xl
+                font-black
+                text-primary
+                animate-pulse
+                drop-shadow-[0_0_30px_red]
+              "
+              style={{
+                animation: "popIn 1s ease forwards",
+              }}
+            >
+              QUE
+            </div>
 
+            <div className="h-[90px] md:h-[120px] flex items-center justify-center">
               <TypeLine
                 text="PEDIR?"
                 speed={120}
                 delay={4000}
                 startDelay={1800}
-                className="block text-6xl md:text-8xl tracking-tight font-display"
+                className="text-6xl md:text-8xl tracking-tight font-display"
               />
             </div>
+
+          </div>
+            
           </div>
           <a
             href={menuImg}
