@@ -1,6 +1,6 @@
 import { Flame, MapPin, Phone, Clock, Instagram, ExternalLink, MessageCircle } from "lucide-react";
 import logoNuevo from "@/assets/logo1.png";
-import TypeLine from "@/components/typeLine";
+import TypeLine from "@/components/TypeLine";
 const logoLight = logoNuevo;
 import menuImg from "@/assets/menu.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
